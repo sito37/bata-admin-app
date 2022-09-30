@@ -14,7 +14,6 @@ const Signin = () => {
   }
 
   const loginUserRequest = (e) => {
-    console.log(user)
     e.preventDefault()
     dispatch(loginUser(user))
   }

@@ -1,8 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import {logoutUser} from "../../redux/features/users/auth.Slice"
-
+import { logoutUser } from '../../redux/features/users/auth.actions'
 const Header = () => {
 
   const {userToken} = useSelector(state => state.auth)

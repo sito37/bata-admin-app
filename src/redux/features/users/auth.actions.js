@@ -13,3 +13,8 @@ export const loginUser = createAsyncThunk('auth/loginUser', async (user) => {
     const res = await axiosInstance.post('admin/signup', user)
     return res.data 
  })
+
+ export const logoutUser = createAsyncThunk('auth/logoutUser', async () => {
+    const res = await axiosInstance.post('admin/signout')
+    return res.data
+ })
